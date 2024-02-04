@@ -21,7 +21,9 @@ module('Integration | Helper | percent', function (hooks) {
     this.set('value', 3600);
     assert.dom(this.element).hasText('360,000%');
 
-    await render(hbs`{{percent this.value 'en-US' (hash minimumFractionDigits=2 maximumFractionDigits=2)}}`);
+    await render(
+      hbs`{{percent this.value 'en-US' (hash minimumFractionDigits=2 maximumFractionDigits=2)}}`
+    );
 
     this.set('value', 0.125);
     assert.dom(this.element).hasText('12.50%');
@@ -73,12 +75,22 @@ module('Integration | Helper | percent', function (hooks) {
     assert.dom(this.element).hasText('360,000%', 'default options');
 
     this.set('locale', 'de-DE');
-    assert.dom(this.element).hasText(`360.000${String.fromCharCode(160)}%`, 'de-DE locale, default options');
+    assert
+      .dom(this.element)
+      .hasText(
+        `360.000${String.fromCharCode(160)}%`,
+        'de-DE locale, default options'
+      );
 
     this.set('options', {
       minimumFractionDigits: 4,
       maximumFractionDigits: 4,
     });
-    assert.dom(this.element).hasText(`360.000,0000${String.fromCharCode(160)}%`, 'de-DE locale, custom options');
+    assert
+      .dom(this.element)
+      .hasText(
+        `360.000,0000${String.fromCharCode(160)}%`,
+        'de-DE locale, custom options'
+      );
   });
 });

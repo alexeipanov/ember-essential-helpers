@@ -1,6 +1,7 @@
 # ember-essential-helpers
-
 Helpers to format boolean, money, percent and file size values.
+
+[![Node.js Package](https://github.com/alexeipanov/ember-essential-helpers/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/alexeipanov/ember-essential-helpers/actions/workflows/npm-publish.yml)
 
 ## Compatibility
 
