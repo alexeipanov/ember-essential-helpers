@@ -19,6 +19,7 @@ ember install ember-essential-helpers
 `{{boolean-format value [labels]}}`
 
   value: boolean value to display
+
   labels: array of two strings to display true and false respectively (default: ['Yes', 'No'])
 
 ### Examples
@@ -32,6 +33,7 @@ ember install ember-essential-helpers
 `{{filesize value [empty]}}`
 
   value: integer value to display as filesize
+
   empty: string to be displayed in case of an undefined value (default: 'N/A')
 
 ### Examples
@@ -46,8 +48,11 @@ this helper uses native Intl.NumberFormat
 `{{percent value [locale] [options] [empty]}}`
 
   value: number
+
   locale: string
+
   options: see [Intl.NumberFormat options](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat#options)
+
   empty: string to be displayed in case of an undefined value (default: 'N/A')
 
 ### Examples
@@ -63,8 +68,11 @@ this helper uses native Intl.NumberFormat
 `{{money-format value [locale] [options] [empty]}}`
 
   value: number
+
   locale: string
+
   options: see [Intl.NumberFormat options](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat#options)
+  
   empty: string to be displayed in case of an undefined value (default: 'N/A')
 
 ### Examples

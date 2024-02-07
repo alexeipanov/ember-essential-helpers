@@ -1,16 +1,18 @@
 {
   "name": "ember-essential-helpers",
-  "version": "0.0.2",
-  "description": "Ember.js addon contains useful helpers",
+  "version": "0.0.3",
+  "description": "Ember.js helpers to format boolean, money, percent and file size values",
   "keywords": [
     "ember",
     "emberjs",
     "ember-cli",
     "ember-addon",
-    "percent intl format",
-    "money intl format",
-    "file size format",
-    "boolean format"
+    "money",
+    "format",
+    "percent",
+    "currency",
+    "boolean",
+    "filesize"
   ],
   "repository": {
     "type": "git",
